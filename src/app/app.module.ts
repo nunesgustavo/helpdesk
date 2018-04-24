@@ -34,8 +34,8 @@ import { FormsModule } from '@angular/forms';
   ],
   providers: [
     UserService,
-    SharedService,
     AuthGuard,
+    SharedService,
     {
       provide: HTTP_INTERCEPTORS,
       useClass: AuthInterceptor,
